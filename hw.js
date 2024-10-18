@@ -1,5 +1,5 @@
-let fieldOne = prompt("Введіть значення для поля one:");
-let fieldTwo = prompt("Введіть значення для поля two:");
+const fieldOne = prompt("Введіть значення для поля one:");
+const fieldTwo = prompt("Введіть значення для поля two:");
 
 if (fieldOne && fieldTwo) {
     alert("Обидва поля заповнені.");
@@ -49,11 +49,11 @@ let name = prompt("Введіть ваше ім'я (не менше 3 симво
     let email = prompt("Введіть ваш email (має містити '@' та '.'):");
     let password = prompt("Введіть ваш пароль (не менше 6 символів):");
 
-    let NameValid = name.length >= 3;
-    let EmailValid = email.includes('@') && email.includes('.') && email.indexOf('.') > email.indexOf('@');
-    let PasswordValid = password.length >= 6;
+    let nameValid = name.length >= 3;
+    let emailValid = email.includes('@') && email.includes('.') && email.indexOf('.') > email.indexOf('@');
+    let passwordValid = password.length >= 6;
 
-    if (NameValid && EmailValid && PasswordValid) {
+    if (nameValid && emailValid && passwordValid) {
         alert("Дані введені коректно! Перенаправлення, направляйтеся до https://r.mtdv.me/watch?v=XwnFgOoMLc");
     } else {
         alert( "ПЕРЕВІРТИ ЧИ ВСЕ ПРАВИЛЬНО: - Ім'я повинно містити не менше 3 символів; - Email має містити '@' та '.' після нього; - Email має містити '@' та '.' після нього.");
